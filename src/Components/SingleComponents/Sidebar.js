@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 
 const Sidebar = () => {
     return (
@@ -17,12 +18,12 @@ const Sidebar = () => {
             <div className="sidebar-nav" data-simplebar="true">
                 <ul className="metismenu" id="menu">
                     <li>
-                        <a href="index.html">
+                        <Link to="/" >
                             <div className="parent-icon">
                                 <span className="material-symbols-outlined">home</span>
                             </div>
                             <div className="menu-title">Dashboard</div>
-                        </a>
+                        </Link>
                     </li>
                     <li>
                         <a href="javascript:;" className="has-arrow">
@@ -99,14 +100,14 @@ const Sidebar = () => {
                         </a>
                         <ul>
                             <li>
-                                <a href="ecommerce-add-product.html">
-                                    <span className="material-symbols-outlined">arrow_right</span>Add Product
-                                </a>
+                                <Link to="/add-blog">
+                                    <span className="material-symbols-outlined">arrow_right</span>Blog Yazısı Ekle
+                                </Link>
                             </li>
                             <li>
-                                <a href="ecommerce-products.html">
+                                <Link to="/productlist">
                                     <span className="material-symbols-outlined">arrow_right</span>Products
-                                </a>
+                                </Link>
                             </li>
                             <li>
                                 <a href="ecommerce-customers.html">
